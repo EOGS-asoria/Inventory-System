@@ -33,6 +33,46 @@ Route::get('/admin/dashboard', function () {
     return Inertia::render('admin/dashboard/page');
 });
 
+Route::get('/admin/users', function () {
+    return Inertia::render('admin/users/page');
+});
+
+Route::get('/admin/department', function () {
+    return Inertia::render('admin/department/page');
+});
+
+Route::get('/admin/office', function () {
+    return Inertia::render('admin/office/page');
+});
+
+Route::get('/admin/position', function () {
+    return Inertia::render('admin/position/page');
+});
+
+Route::get('/admin/equiptype', function () {
+    return Inertia::render('admin/equiptype/page');
+});
+
+Route::get('/admin/apptype', function () {
+    return Inertia::render('admin/apptype/page');
+});
+
+Route::get('/admin/maintenance', function () {
+    return Inertia::render('admin/maintenance/page');
+});
+
+Route::get('/admin/reports', function () {
+    return Inertia::render('admin/reports/page');
+});
+
+Route::get('/admin/equipinventory', function () {
+    return Inertia::render('admin/equipinventory/page');
+});
+
+Route::get('/admin/appinventory', function () {
+    return Inertia::render('admin/appinventory/page');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
