@@ -22,6 +22,7 @@ import {
   FolderIcon,
   HomeIcon,
   PresentationChartBarIcon,
+  UserCircleIcon,
   UserGroupIcon,
   UsersIcon,
   WrenchIcon,
@@ -34,6 +35,7 @@ import AdminSidenavSection from './_sections/admin-sidenav-section'
 const navigation = [
   { name: 'Dashboard', href: './dashboard', icon: HomeIcon, current: true },
   { name: 'User Section', href: './users', icon: UsersIcon, current: false },
+  { name: 'Employee Section', href: './employee', icon: UserCircleIcon, current: false },
   { name: 'Department Section', href: './department', icon: FolderIcon, current: false },
   { name: 'Office Section', href: './office', icon: BuildingOffice2Icon, current: false },
   { name: 'Position Section', href: './position', icon: UserGroupIcon, current: false },

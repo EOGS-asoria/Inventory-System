@@ -28,13 +28,18 @@ export default function UsersTableSection() {
             department: 'I.T Department',
         },
     ]
+    const items = [
+        { id: 1, title: 'Back End Developer', department: 'Engineering', type: 'Full-time', location: 'Remote' },
+        { id: 2, title: 'Front End Developer', department: 'Engineering', type: 'Full-time', location: 'Remote' },
+        { id: 3, title: 'User Interface Designer', department: 'Design', type: 'Full-time', location: 'Remote' },
+    ]
     return (
         <div>
             <table className="min-w-full divide-y divide-gray-300">
                 <thead>
                     <tr>
                         <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">
-                            Employee
+                            Users
                         </th>
                         <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">
                             Email
@@ -56,7 +61,7 @@ export default function UsersTableSection() {
                 </thead>
                 <tbody className="divide-y divide-gray-200 bg-white">
                     {people.map((person) => (
-                        <tr key={person.position}>
+                        <tr key={person.position} className='hover:bg-gray-200'>
                             <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">
                                 <div className="flex items-center">
                                     <div className="h-11 w-11 flex-shrink-0">

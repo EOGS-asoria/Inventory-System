@@ -37,6 +37,10 @@ Route::get('/admin/users', function () {
     return Inertia::render('admin/users/page');
 });
 
+Route::get('/admin/employee', function () {
+    return Inertia::render('admin/employee/page');
+});
+
 Route::get('/admin/department', function () {
     return Inertia::render('admin/department/page');
 });
