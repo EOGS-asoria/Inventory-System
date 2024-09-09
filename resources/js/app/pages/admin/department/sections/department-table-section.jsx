@@ -12,7 +12,7 @@ export default function DepartmentTableSection() {
         <table className="min-w-full divide-y divide-gray-300">
           <thead>
             <tr>
-              <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">
+              <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900">
                 Department Name
               </th>
               <th
@@ -34,8 +34,8 @@ export default function DepartmentTableSection() {
           </thead>
           <tbody className="divide-y divide-gray-200 bg-white">
             {people.map((person) => (
-              <tr key={person.email}>
-                <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-0">
+              <tr key={person.email} className='hover:bg-gray-200'>
+                <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none">
                   {person.department}
                   <dl className="font-normal lg:hidden">
                     <dt className="sr-only">Title</dt>
@@ -46,7 +46,7 @@ export default function DepartmentTableSection() {
                 </td>
                 <td className="hidden px-3 py-4 text-sm text-gray-500 lg:table-cell">{person.manager}</td>
                 <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell">{person.email}</td>
-                <td className="py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
+                <td className="py-4 pl-3 pr-4 text-right text-sm font-medium">
                   <a href="#" className="text-indigo-600 hover:text-indigo-900">
                     Edit<span className="sr-only">, {person.department}</span>
                   </a>
