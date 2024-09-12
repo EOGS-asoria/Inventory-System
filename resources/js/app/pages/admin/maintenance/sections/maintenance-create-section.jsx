@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
-import { ExclamationTriangleIcon, FolderPlusIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline'
-import { ExclamationCircleIcon } from '@heroicons/react/20/solid'
+import { FolderPlusIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline'
 
 export default function MaintenanceCreateSection() {
     const [open, setOpen] = useState(false)

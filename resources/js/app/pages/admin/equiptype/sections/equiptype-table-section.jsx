@@ -1,3 +1,4 @@
+import { PencilSquareIcon, TrashIcon } from '@heroicons/react/24/outline'
 import React from 'react'
 
 export default function EquiptypeTableSection() {
@@ -28,14 +29,25 @@ export default function EquiptypeTableSection() {
                 </thead>
                 <tbody className="divide-y divide-gray-200 bg-white">
                     {equiptype.map((types) => (
-                        <tr>
+                        <tr className='hover:bg-gray-200'>
                             <td className="text-center text-sm font-medium text-gray-900">
                                 {types.name}
                             </td>
                             <td className="py-4 pl-3 pr-4 text-sm font-medium sm:pr-0">
-                                <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                                    Edit<span className="sr-only">, {types.name}</span>
-                                </a>
+                            <button
+                                    type="button"
+                                    className="inline-flex items-center gap-x-1.5 mr-1 rounded-md bg-transparent border-none shadow-none hover:text-green-400 focus:outline-none text-green-500 font-bold"
+                                >
+                                    <PencilSquareIcon aria-hidden="true" className="h-6 w-6" />
+                                    <span className="sr-only">, {equiptype.name}</span>
+                                </button>
+                                <button
+                                    type="button"
+                                    className="inline-flex items-center gap-x-1.5 mr-1 rounded-md bg-transparent border-none shadow-none hover:text-red-400 focus:outline-none text-red-500 font-bold"
+                                >
+                                    <TrashIcon aria-hidden="true" className="-ml-0.50 h-6 w-6" />
+                                    <span className="sr-only">, {equiptype.name}</span>
+                                </button>
                             </td>
                         </tr>
                     ))}

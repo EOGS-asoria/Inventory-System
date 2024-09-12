@@ -81,25 +81,19 @@ export default function UsersTableSection() {
                             </td>
                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
                             <td className="whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium">
-                                {/* <a href="#" className="text-indigo-600 hover:text-indigo-900 mr-4">
-                                    Edit<span className="sr-only">, {person.name}</span>
-                                </a>
-                                <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                                    Delete<span className="sr-only">, {person.name}</span>
-                                </a> */}
                                 <button
                                     type="button"
-                                    className="inline-flex items-center gap-x-1.5 mr-1 rounded-md bg-green-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+                                    className="inline-flex items-center gap-x-1.5 mr-1 rounded-md bg-transparent border-none shadow-none hover:text-green-400 focus:outline-none text-green-500 font-bold"
                                 >
-                                    <PencilSquareIcon aria-hidden="true" className="-ml-0.5 h-5 w-5" />
-                                    Edit
+                                    <PencilSquareIcon aria-hidden="true" className="h-6 w-6" />
                                 </button>
+
                                 <button
                                     type="button"
-                                    className="inline-flex items-center gap-x-1.5 rounded-md bg-red-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+                                    className="inline-flex items-center gap-x-1.5 mr-1 rounded-md bg-transparent border-none shadow-none hover:text-red-400 focus:outline-none text-red-500 font-bold"
                                 >
-                                    <TrashIcon aria-hidden="true" className="-ml-0.5 h-5 w-5" />
-                                    Remove
+                                    <TrashIcon aria-hidden="true" className="-ml-0.50 h-6 w-6" />
+
                                 </button>
                             </td>
                         </tr>

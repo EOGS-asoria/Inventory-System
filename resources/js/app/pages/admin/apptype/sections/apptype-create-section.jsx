@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
-import { ArchiveBoxIcon, ExclamationTriangleIcon, FolderPlusIcon } from '@heroicons/react/24/outline'
+import { ArchiveBoxIcon, FolderPlusIcon } from '@heroicons/react/24/outline'
 
 export default function ApptypeCreateSection() {
     const [open, setOpen] = useState(false)

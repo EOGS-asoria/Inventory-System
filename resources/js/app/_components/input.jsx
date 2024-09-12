@@ -1,28 +1,34 @@
-import React from 'react'
+import React from "react";
 
-export default function Input({ name, type, onChange, value, required }) {
+export default function Input({
+    onChange,
+    value,
+    required,
+    name,
+    label,
+    type,
+}) {
     return (
-        <div>
-            <div>
-                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                    Email address
-                </label>
-                <div className="mt-2">
-                    <input
-                        name={name}
-                        type={type}
-                        onChange={onChange}
-                        value={value?.email}
-                        required={required}
-                        autoComplete="email"
-                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                    {
-                        required && !value && <div><p className='text-red-400 text-sm mt-2 capitalize italic'>{name} is Required.</p></div>
-                    }
+        <div className="w-full">
+            <div className="relative">
+                <input
+                    required={required ?? false}
+                    value={value}
+                    onChange={onChange}
+                    type={type}
+                    id={name}
+                    name={name}
+                    className="peer pl-4 text-black placeholder-transparent w-full rounded-md py-2.5 px-5 border-gray-500 border bg-transparent bg-white focus-within:outline-none focus-within:border-blue-500"
+                    placeholder=""
+                />
 
-                </div>
+                <label
+                    htmlFor={name}
+                    className="absolute left-2.5 px-2.5 transition-all bg-white text-blue-black/60 text-sm -top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2.5 peer-focus:-top-3 peer-focus:text-sm peer-focus:text-blue-600 peer-focus:bg-white"
+                >
+                    {label}
+                </label>
             </div>
         </div>
-    )
+    );
 }
