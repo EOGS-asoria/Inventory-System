@@ -1,5 +1,6 @@
 import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/20/solid'
 import { CursorArrowRaysIcon, EnvelopeOpenIcon, UsersIcon } from '@heroicons/react/24/outline'
+import SampleSection from './sample-section'
 
 const stats = [
   { id: 1, name: 'Total Subscribers', stat: '71,897', icon: UsersIcon, change: '122', changeType: 'increase' },
@@ -47,9 +48,11 @@ export default function DashboardStatsSection() {
               </p>
               <div className="absolute inset-x-0 bottom-0 bg-gray-50 px-4 py-4 sm:px-6">
                 <div className="text-sm">
-                  <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+
+                  <a href={SampleSection} className="font-medium text-indigo-600 hover:text-indigo-500">
                     View all<span className="sr-only"> {item.name} stats</span>
                   </a>
+
                 </div>
               </div>
             </dd>

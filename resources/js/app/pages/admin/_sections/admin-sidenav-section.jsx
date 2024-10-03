@@ -50,9 +50,7 @@ export default function AdminSidenavSection({navigation, classNames, teams}) {
                             'group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6',
                           )}
                         >
-                          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">
-                            {team.initial}
-                          </span>
+                          <team.icon aria-hidden="true" className="h-6 w-6 shrink-0" />
                           <span className="truncate">{team.name}</span>
                         </a>
                       </li>

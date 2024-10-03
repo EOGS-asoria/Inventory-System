@@ -29,7 +29,7 @@ import {
   WrenchScrewdriverIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { BuildingOffice2Icon, ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
+import { ArrowRightEndOnRectangleIcon, ArrowsRightLeftIcon, BarsArrowDownIcon, BuildingOffice2Icon, ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import AdminSidenavSection from './_sections/admin-sidenav-section'
 
 const navigation = [
@@ -47,9 +47,9 @@ const navigation = [
   { name: 'Furniture/Appliances Inventory', href: './appinventory', icon: DocumentChartBarIcon, current: false },
 ]
 const teams = [
-  { id: 1, name: 'Heroicons', href: '#', initial: 'H', current: false },
-  { id: 2, name: 'Tailwind Labs', href: '#', initial: 'T', current: false },
-  { id: 3, name: 'Workcation', href: '#', initial: 'W', current: false },
+  { id: 1, name: 'Send/Transfer Items', href: './transfer', icon: ArrowsRightLeftIcon, current: false },
+  { id: 2, name: 'Receive Items', href: './receive', icon: ArrowRightEndOnRectangleIcon, current: false },
+  { id: 3, name: 'Purchase Request', href: './request', icon: BarsArrowDownIcon, current: false },
 ]
 const userNavigation = [
   { name: 'Your profile', href: '#' },

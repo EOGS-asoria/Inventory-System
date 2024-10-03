@@ -77,6 +77,18 @@ Route::get('/admin/appinventory', function () {
     return Inertia::render('admin/appinventory/page');
 });
 
+Route::get('/admin/transfer', function () {
+    return Inertia::render('admin/transfer/page');
+});
+
+Route::get('/admin/request', function () {
+    return Inertia::render('admin/request/page');
+});
+
+Route::get('/admin/receive', function () {
+    return Inertia::render('admin/receive/page');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
